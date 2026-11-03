@@ -1,0 +1,15 @@
+[Unit]
+Description=NexMatch database backup to HD
+Documentation=https://github.com/edisrocha/mv3
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/Projetos/Nexmatch/scripts/backup-db.sh
+Environment=HOME=%h
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

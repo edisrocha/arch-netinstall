@@ -1,0 +1,2 @@
+# Pacotes que não se encaixam nas outras categorias.
+# sync-manifest.sh acrescenta aqui o que estiver instalado e fora do manifesto.

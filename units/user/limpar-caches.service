@@ -1,0 +1,6 @@
+[Unit]
+Description=Limpeza periodica de caches regeneraveis do usuario
+
+[Service]
+Type=oneshot
+ExecStart=%h/.local/bin/limpar-caches.sh

@@ -1,0 +1,5 @@
+# Pacotes que só existem no AUR (instalados por 04-optional.sh via yay)
+# yay é sempre compilado primeiro.
+downgrade
+qogir-icon-theme
+arc-gtk-theme

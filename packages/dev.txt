@@ -1,0 +1,24 @@
+# Desenvolvimento e engenharia reversa
+go
+nodejs
+npm
+python
+python-capstone
+python-defusedxml
+python-jinja
+python-packaging
+python-pygame
+python-pwntools
+github-cli
+radare2
+rizin
+iaito
+jadx
+binwalk
+nasm
+gef
+pwndbg
+
+# IA / agentes
+ollama
+opencode

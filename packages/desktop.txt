@@ -1,0 +1,97 @@
+# Desktop XFCE + i3 (X11)
+xorg-server
+xorg-xinit
+xorg-xdpyinfo
+xorg-xinput
+xorg-xkill
+xorg-xrandr
+xf86-input-libinput
+xterm
+rxvt-unicode
+
+# XFCE
+xfce4-session
+xfce4-settings
+xfce4-panel
+xfce4-appfinder
+xfce4-power-manager
+xfce4-terminal
+xfdesktop
+xfwm4
+garcon
+thunar
+thunar-volman
+thunar-archive-plugin
+tumbler
+gvfs
+gvfs-afc
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-smb
+
+# i3
+i3-wm
+i3blocks
+i3status
+i3lock
+xss-lock
+dunst
+rofi
+picom
+feh
+dex
+arandr
+xbindkeys
+numlockx
+
+# Login / tema
+lightdm
+lightdm-slick-greeter
+accountsservice
+polkit-gnome
+nwg-look
+
+# Aplicativos
+scrot
+xarchiver
+xed
+galculator
+meld
+mpv
+firefox
+chromium
+archlinux-xdg-menu
+xdg-user-dirs
+xdg-user-dirs-gtk
+xdg-utils
+aspell
+aspell-pt
+
+# Gráficos Intel (Sandy Bridge) + codecs
+mesa-utils
+vulkan-intel
+libva-intel-driver
+intel-media-driver
+gst-libav
+gst-plugins-bad
+gst-plugins-ugly
+gst-plugin-pipewire
+gst-plugin-va
+
+# Fontes
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+noto-fonts-extra
+cantarell-fonts
+ttf-bitstream-vera
+ttf-dejavu
+ttf-liberation
+ttf-opensans
+awesome-terminal-fonts
+
+# Editores / utilidades de desktop
+code
+dmenu
+scrcpy

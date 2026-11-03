@@ -1,0 +1,11 @@
+[Unit]
+Description=Daily NexMatch DB backup (also runs at boot)
+Documentation=https://github.com/edisrocha/mv3
+
+[Timer]
+OnBootSec=120
+OnUnitActiveSec=1d
+Persistent=true
+
+[Install]
+WantedBy=timers.target

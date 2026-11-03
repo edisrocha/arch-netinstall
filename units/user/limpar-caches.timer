@@ -1,0 +1,10 @@
+[Unit]
+Description=Limpeza semanal de caches regeneraveis do usuario
+
+[Timer]
+OnCalendar=Sun *-*-* 03:00:00
+Persistent=true
+RandomizedDelaySec=15m
+
+[Install]
+WantedBy=timers.target

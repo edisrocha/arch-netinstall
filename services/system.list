@@ -1,0 +1,13 @@
+# Serviços de sistema habilitados (systemctl enable)
+NetworkManager
+lightdm
+docker.socket
+bluetooth
+firewalld
+avahi-daemon
+power-profiles-daemon
+systemd-oomd
+systemd-timesyncd
+fstrim.timer
+paccache.timer
+cpu-governor.service

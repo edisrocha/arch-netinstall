@@ -1,0 +1,18 @@
+[Unit]
+Description=9Router - AI Model Router with Smart Fallback
+Documentation=https://9router.com
+After=network.target
+
+[Service]
+Type=exec
+WorkingDirectory=/home/rocha/.npm-global/lib/node_modules/9router/app
+ExecStart=/usr/bin/node /home/rocha/.npm-global/lib/node_modules/9router/app/server.js
+Restart=on-failure
+RestartSec=5
+Environment=NODE_ENV=production
+Environment=NODE_PATH=/home/rocha/.9router/runtime/node_modules:/home/rocha/.npm-global/lib/node_modules/9router/app/node_modules
+Environment=PORT=20128
+Environment=HOSTNAME=0.0.0.0
+
+[Install]
+WantedBy=default.target
