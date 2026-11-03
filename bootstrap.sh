@@ -39,8 +39,13 @@ TMP=$(mktemp -d)
 trap 'rm -rf "$TMP"' EXIT
 
 URL="https://codeload.github.com/$REPO/tar.gz/$REF"
-say "baixando $REPO@$REF"
-fetch "$URL" "$TMP/src.tar.gz" || die "falha no download de $URL"
+if [[ -n "${NETINSTALL_TARBALL:-}" ]]; then
+  say "usando tarball local: $NETINSTALL_TARBALL"
+  cp -f "$NETINSTALL_TARBALL" "$TMP/src.tar.gz" || die "tarball local inválido"
+else
+  say "baixando $REPO@$REF"
+  fetch "$URL" "$TMP/src.tar.gz" || die "falha no download de $URL"
+fi
 
 tar -xzf "$TMP/src.tar.gz" -C "$TMP" || die "tarball inválido"
 SRC=$(find "$TMP" -mindepth 1 -maxdepth 1 -type d | head -1)
