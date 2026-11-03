@@ -33,7 +33,19 @@ Diferenças conscientes em relação à máquina de origem:
 
 ## 2. Uso
 
-### 2.1 Preparar o pendrive
+### 2.1 Instalação remota (sem pendrive)
+
+```bash
+# no live ISO do Arch, já como root:
+curl -fsSL https://raw.githubusercontent.com/edisrocha/arch-netinstall/main/bootstrap.sh \
+  | bash -s -- --disk /dev/sda --dry-run
+```
+
+O `bootstrap.sh` baixa o tarball deste repositório para `/root/netinstall` e executa
+o `install.sh` com os argumentos recebidos (aceita tudo: `--disk`, `--dry-run`,
+`--wifi`, `--yes`, ...).
+
+### 2.2 Preparar o pendrive
 
 ```bash
 cd ~/Projetos/arch-netinstall
@@ -48,7 +60,7 @@ netinstall/                  <- este repositório
 netinstall-YYYYMMDD.tar.zst  <- snapshot íntegro (preserva permissões)
 ```
 
-### 2.2 Instalar
+### 2.3 Instalar
 
 No live ISO:
 
@@ -67,7 +79,7 @@ bash /mnt/usb/netinstall/install.sh --wifi "SUA_REDE" "SENHA" --disk /dev/sda
 
 A senha do usuário é pedida interativamente na fase 30 (não fica em arquivo).
 
-### 2.3 Depois do primeiro boot
+### 2.4 Depois do primeiro boot
 
 ```bash
 bash ~/Projetos/arch-netinstall/04-optional.sh   # npm globals, AUR, ollama
